@@ -9,7 +9,7 @@ using WeatherService.Interfaces;
 
 namespace WeatherService.Classes
 {
-    public class Persistence<TCityWeather> : IPersistence<TCityWeather>
+    public class Persistence<TCityWeather> : IPersistence<TCityWeather> where TCityWeather:ICityWeather
     {
         public bool Create(IEnumerable<ICityWeather> cityWeathers, DateTime date)
         {

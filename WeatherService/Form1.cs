@@ -112,7 +112,5 @@ namespace WeatherService
             var cityWeathers = persistence.GetCityWeathers(dateTimePicker1.Value);
             DGVHistory.DataSource = cityWeathers.ToDataTable();
         }
-
-        
     }
 }

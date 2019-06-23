@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WeatherService.Interfaces
 {
-    public interface IApiHandler<TCityWeather>
+    public interface IApiHandler<TCityWeather> where TCityWeather : ICityWeather
     {
         TCityWeather GetCityWeather(int id);
     }

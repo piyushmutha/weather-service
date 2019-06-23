@@ -10,7 +10,7 @@ using WeatherService.Interfaces;
 
 namespace WeatherService.Classes
 {
-    public class ApiHandler<TCityWeather> : IApiHandler<TCityWeather>
+    public class ApiHandler<TCityWeather> : IApiHandler<TCityWeather> where TCityWeather : ICityWeather
     {
         public TCityWeather GetCityWeather(int id)
         {
